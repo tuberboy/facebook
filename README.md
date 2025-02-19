@@ -46,7 +46,7 @@ This repository provides a PHP-based private API for automating various Facebook
 - Contributions aimed at enhancing the educational value of this project are welcome. Please fork the repository and submit a pull request with your improvements.
 
 ## License
-= This project is licensed under the `MIT License`. See the `LICENSE` file for more details.
+- This project is licensed under the `MIT License`. See the `LICENSE` file for more details.
 
 ## Contact
 - For questions or concerns, please `open an issue` in this repository.
