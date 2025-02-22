@@ -1,6 +1,44 @@
 <?php
 set_time_limit(0);
+// API-based code for registration that works well.
 
+// Send a POST request to this URL
+$url = 'http://api.tuberboy.com/fb/reg'; // This URL is temporary and will be removed soon.
+
+// POST fields to send with the request to register an account.
+// Adjust this post's fields as needed or modify them as you want.
+$data = [
+    'name' => 'Liam Smith', // Full name
+    'email' => 'example' . rand(111, 999) . '@outlook.com', // Random email - A verification code will be sent to this email or phone number
+    'password' => 'LSacc' . rand(1111, 9999) . '?#@', // Random account password
+    'gender' => 2, // Gender: Female = 1, Male = 2
+    'proxy' => 'http://username:password@host_OR_ip:port' // For proxy support
+];
+
+// Simple PHP cURL example (you can use any programming language to make this request)
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    'Content-Type: application/x-www-form-urlencoded'
+]);
+$response = curl_exec($ch);
+
+// Print the response or handle errors
+if (curl_errno($ch)) {
+    echo 'cURL error: ' . curl_error($ch);
+} else {
+    $result = json_decode($response, true);
+    echo "<pre>";
+    print_r($result);
+    echo "</pre>";
+}
+
+curl_close($ch);
+
+// old register codes (not working)
+/*
 $app = [
     'api_key' => '882a8490361da98702bf97a021ddc14d',
     'secret' => '62f8ce9f74b12f84c123cc23437a4a32'
@@ -83,4 +121,5 @@ function _call($url = '', $params = [], $post = 1) {
     curl_close($c);
     return $d;
 }
+*/
 ?>
