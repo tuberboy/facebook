@@ -83,7 +83,7 @@ class ChangeInfo {
     }
 
     public function setInfo(array $data) : void {
-        $this->_cURL('https://graph.facebook.com/me?locale=vi_VN&client_country_code=VN&fb_api_req_friendly_name=save_core_profile_info&access_token='.$this->_token.'&work='.$data[0].'&education='.$data[1].'&location='.$data[2].'&hometown='.$data[3].'&method=post');
+        $this->_cURL('https://graph.facebook.com/me?locale=en_US&client_country_code=US&fb_api_req_friendly_name=save_core_profile_info&access_token='.$this->_token.'&work='.$data[0].'&education='.$data[1].'&location='.$data[2].'&hometown='.$data[3].'&method=post');
     }
 
     public function setPublicPhoto(string $type = 'avatar', ?string $imgLink = null, string $caption = '<3') : void {
