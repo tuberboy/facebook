@@ -1,4 +1,4 @@
-# Facebook Private API Automation (Educational Purposes Only)
+# Facebook API (Educational Purposes Only)
 
 ## Disclaimer
 
@@ -10,9 +10,9 @@ This project is developed **solely for educational purposes** to demonstrate how
 
 ## About
 
-This repository provides a PHP-based private API for automating various Facebook interactions. The functionalities include:
+This repository provides a PHP-based API for various Facebook interactions. The functionalities include:
 
-- Automatic creation of accounts
+- Creation of accounts
 - Liking pages or posts
 - Following users
 - Increasing video views
@@ -20,8 +20,8 @@ This repository provides a PHP-based private API for automating various Facebook
 
 ## Features
 
-- **Account Management**: Scripts like `auto-reg-fb.php` and `change-fb-acc-info.php` facilitate automatic account creation and modification.
-- **Engagement Automation**: Use `like-follow-page.php` to automate likes and follows.
+- **Account Management**: Scripts like `auto-reg-fb.php` and `change-fb-acc-info.php` facilitate account creation and modification.
+- **Engagement**: Use `like-follow-page.php` to likes and follows.
 - **Content Interaction**: Scripts such as `create-fb-page.php` and `get-all-pages.php` allow for page creation and retrieval.
 - **Token and Session Management**: Tools like `fb-cookies-to-get-access-token.php` and `check-token-live.php` assist in managing access tokens and session validation.
 - **And more:** etc etc...
